@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env
 load_dotenv()
 
-# Get API key (NEVER write directly in code)
+# Get API key 
 API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Configure Gemini
