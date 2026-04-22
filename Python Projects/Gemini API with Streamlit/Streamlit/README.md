@@ -47,8 +47,3 @@ These projects are built for learning Streamlit basics like:
 - UI components  
 - Simple logic building
 """
-
-file_path = "/mnt/data/README.md"
-Path(file_path).write_text(content, encoding="utf-8")
-
-file_path
