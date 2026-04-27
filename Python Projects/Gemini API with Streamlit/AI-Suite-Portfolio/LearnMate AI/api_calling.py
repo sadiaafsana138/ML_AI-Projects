@@ -1,14 +1,21 @@
-from google import genai
+import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 import io
 from gtts import gTTS
+from PIL import Image
 
+# ---------------- LOAD API KEY ----------------
 load_dotenv()
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-my_api_key = os.getenv("GEMINI_API_KEY")
 
-client = genai.Client(api_key=my_api_key)
+# ---------------- HELPER: IMAGE FORMAT ----------------
+def prepare_images(images):
+    pil_images = []
+    for img in images:
+        pil_images.append(img)
+    return pil_images
 
 
 # ---------------- NOTE GENERATOR ----------------
@@ -22,10 +29,9 @@ def note_generator(images, selected_language):
     Use markdown with headings and bullet points.
     """
 
-    response = client.models.generate_content(
-        model="gemini-3-flash-preview",
-        contents=images + [prompt]
-    )
+    model = genai.GenerativeModel("gemini-1.5-flash")
+
+    response = model.generate_content([prompt] + images)
 
     return response.text
 
@@ -63,9 +69,8 @@ def quiz_generator(images, difficulty, language):
     Answer: A
     """
 
-    response = client.models.generate_content(
-        model="gemini-3-flash-preview",
-        contents=images + [prompt]
-    )
+    model = genai.GenerativeModel("gemini-1.5-flash")
+
+    response = model.generate_content([prompt] + images)
 
     return response.text
