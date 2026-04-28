@@ -1,90 +1,75 @@
-# 🏦 Python OOP Banking System
+# 🏦 Python OOP Banking System (Mini Project)
 
-A simple **Object-Oriented Banking System** built using Python to demonstrate core OOP concepts like:
-
-- Encapsulation 🔒  
-- Inheritance 👨‍👩‍👧‍👦  
-- Abstraction 🎭  
-- Method Overriding 🔁  
+A simple **Object-Oriented Programming (OOP)** project in Python that demonstrates core OOP concepts using a banking system simulation.
 
 ---
 
 ## 📌 Features
 
-- 🧾 Create bank accounts  
+- 🧾 Create bank accounts with name, account number, and balance  
 - 💰 Deposit money  
-- 💸 Withdraw money with validation  
+- 💸 Withdraw money with balance validation  
 - 📈 Interest calculation for savings account  
 - 🚫 Overdraft support for current account  
-- 🏧 ATM & Visa card abstraction system  
+- 🏧 Abstract banking service structure  
 
 ---
 
 ## 🧠 OOP Concepts Used
 
 ### 🔒 Encapsulation
-- Private balance (`__balance`)
-- Controlled access using methods
+- Private attribute `__balance`
+- Access controlled via methods like `get_balance()`, `deposit()`, `withdraw()`
+
+---
 
 ### 👨‍👩‍👧‍👦 Inheritance
-- `SavingAccount` and `CurrentAccount` inherit from `Account`
+- `SavingAccount` inherits from `Account`
+- `CurrentAccount` inherits from `Account`
+
+---
 
 ### 🎭 Abstraction
-- `BankService` abstract class defines transaction structure
+- `BankService` is an abstract base class
+- Defines `transaction()` method structure
 
-### 🔁 Polymorphism
+---
+
+### 🔁 Method Overriding
 - `withdraw()` method is overridden in `CurrentAccount`
 
 ---
 
-## 📂 Project Structure
-Bank System Mini Project Using OOP/
--│
--├── Bank System - Mini Project Using OOP.py        # All classes and execution code
-
 ## ⚙️ Classes Overview
 
----
-
 ### 🏦 Account (Base Class)
-- Stores account details  
-- Handles deposit & withdraw operations  
-- Keeps balance private for security  
+- Stores user account details  
+- Manages deposit and withdraw operations  
+- Keeps balance private  
 
 ---
 
 ### 💰 SavingAccount
 - Adds interest calculation feature  
-- Inherits from Account class  
+- Uses balance from parent class  
 
 ---
 
 ### 💳 CurrentAccount
-- Supports overdraft facility  
-- Overrides withdraw method for extra flexibility  
+- Supports overdraft limit  
+- Overrides withdraw logic  
 
 ---
 
 ### 🏧 BankService (Abstract Class)
-- Defines `transaction()` method  
-- Acts as a blueprint for banking services  
+- Defines structure for banking services  
+- Contains abstract method `transaction()`  
 
 ---
 
 ### 🏧 ATM / VisaCard
-- Implements transaction methods  
-- Provides different ways to perform banking operations  
-
----
-
-## 🎯 Learning Outcome
-
-- Real-world banking system logic  
-- Strong understanding of OOP design principles in Python  
-- Code reusability and modular architecture  
-- Data security using encapsulation  
-
----
+- Implements `transaction()` method  
+- Represents different banking service types  
 
 ## 👨‍💻 Author
 
