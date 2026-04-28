@@ -30,14 +30,13 @@ LearnMate AI is an AI-powered study assistant that converts images of notes, tex
 ## 📂 Project Structure
 LearnMate-AI/
 │
-├── app.py # Streamlit UI (main app)
-├── api_calling.py # Gemini AI logic (notes, quiz, audio)
-├── working_image.py # Image processing test module
-├── working_audio.py # Text-to-speech test module
-│
-├── .env # API key (not pushed to GitHub)
-├── README.md # Documentation
-
+├── app.py
+├── api_calling.py
+├── working_image.py
+├── working_audio.py
+├── requirements.txt 
+├── .env
+├── README.md
 
 
 ---
@@ -68,11 +67,11 @@ LearnMate-AI/
 - GEMINI_API_KEY=your_api_key_here
 
 ## Future Improvements
--📄 PDF support
--🧠 Quiz answer explanations
--📊 Progress tracking system
--🌙 Dark mode UI
--☁️ Cloud storage for notes
+📄 PDF support
+🧠 Quiz answer explanations
+📊 Progress tracking system
+🌙 Dark mode UI
+☁️ Cloud storage for notes
 
 ## 👨‍💻 Author
--Sadia Afsana
+Sadia Afsana
