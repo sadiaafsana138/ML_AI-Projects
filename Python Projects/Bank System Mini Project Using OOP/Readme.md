@@ -39,32 +39,53 @@ A simple **Object-Oriented Banking System** built using Python to demonstrate co
 
 ## 📂 Project Structure
 Bank System Mini Project Using OOP/
-│
-├── Bank System - Mini Project Using OOP.py        # All classes and execution code
+-│
+-├── Bank System - Mini Project Using OOP.py        # All classes and execution code
 
-⚙️ Classes Overview
-🏦 Account (Base Class)
-Stores account details
-Handles deposit & withdraw
-Keeps balance private
-💰 SavingAccount
-Adds interest calculation feature
-💳 CurrentAccount
-Supports overdraft facility
-🏧 BankService (Abstract Class)
-Defines transaction() method
-🏧 ATM / VisaCard
-Implements transaction methods
+## ⚙️ Classes Overview
 
+---
 
-🎯 Learning Outcome
+### 🏦 Account (Base Class)
+- Stores account details  
+- Handles deposit & withdraw operations  
+- Keeps balance private for security  
 
-This project helps you understand:
+---
 
-Real-world banking system logic
-OOP design principles in Python
-Code reusability and modular structure
-Data security using encapsulation
+### 💰 SavingAccount
+- Adds interest calculation feature  
+- Inherits from Account class  
 
-👨‍💻 Author
-Sadia Afsana
+---
+
+### 💳 CurrentAccount
+- Supports overdraft facility  
+- Overrides withdraw method for extra flexibility  
+
+---
+
+### 🏧 BankService (Abstract Class)
+- Defines `transaction()` method  
+- Acts as a blueprint for banking services  
+
+---
+
+### 🏧 ATM / VisaCard
+- Implements transaction methods  
+- Provides different ways to perform banking operations  
+
+---
+
+## 🎯 Learning Outcome
+
+- Real-world banking system logic  
+- Strong understanding of OOP design principles in Python  
+- Code reusability and modular architecture  
+- Data security using encapsulation  
+
+---
+
+## 👨‍💻 Author
+
+**Sadia Afsana**
