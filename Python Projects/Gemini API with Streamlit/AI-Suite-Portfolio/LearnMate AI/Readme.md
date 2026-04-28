@@ -28,6 +28,7 @@ LearnMate AI is an AI-powered study assistant that converts images of notes, tex
 ---
 
 ## 📂 Project Structure
+```
 LearnMate-AI/
 │
 ├── app.py
@@ -38,7 +39,7 @@ LearnMate-AI/
 ├── requirements.txt
 ├── .env
 ├── README.md
-
+```
 
 ---
 
@@ -68,8 +69,8 @@ LearnMate-AI/
 - GEMINI_API_KEY=your_api_key_here
 
 
-## Requirements
-
+## Requirements.txt
+```
 altair==6.0.0
 annotated-types==0.7.0
 anyio==4.13.0
@@ -127,6 +128,7 @@ tzdata==2026.1
 urllib3==2.6.3
 watchdog==6.0.0
 websockets==16.0
+```
 
 ## Future Improvements
 📄 PDF support
