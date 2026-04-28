@@ -57,7 +57,7 @@ LearnMate-AI/
 
 ## 📦 Installation (Local Setup)
 
-- bash
+ bash
 - git clone https://github.com/your-username/LearnMate-AI.git
 - cd LearnMate-AI
 - pip install -r requirements.txt
