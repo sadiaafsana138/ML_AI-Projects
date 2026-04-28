@@ -34,7 +34,8 @@ LearnMate-AI/
 ├── api_calling.py
 ├── working_image.py
 ├── working_audio.py
-├── requirements.txt 
+│
+├── requirements.txt
 ├── .env
 ├── README.md
 
